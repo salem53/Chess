@@ -97,6 +97,42 @@ class ChessGame
 
 
         };
+        void updatePosition(Position pos1, Position pos2 ) {
+            Piece* piece = getPieceByPosition(pos1);
+            for (int i=0; i<8;i++) {
+                    for(int j=0;j<8;j++) {
+                         if (ensemblePieces[i][j]->getPosition().egale(pos1)) {
+                            ensemblePieces[i][j]=NULL ;
+                        }
+                        if (ensemblePieces[i][j]->getPosition().egale(pos2)) {
+                    ensemblePieces[i][j]=piece ;
+                        }
+
+                    }
+
+
+            }
+            for (int i=0; i<piecesBlanc.size();i++) {
+                if (piecesBlanc[i]->getPosition().egale(pos1)) {
+                    piecesBlanc[i]=NULL ;
+                }
+                if (piecesBlanc[i]->getPosition().egale(pos2)) {
+                    piecesBlanc[i]=piece ;
+                }
+
+            }
+            for (int i=0; i<piecesNoir.size();i++) {
+                if (piecesNoir[i]->getPosition().egale(pos1)) {
+                    piecesNoir[i]=NULL ;
+                }
+                if (piecesNoir[i]->getPosition().egale(pos2)) {
+                    piecesNoir[i]=piece ;
+                }
+
+            }
+
+
+        }
         void startGame () {
             std::string positionDepart , positionArivee ;
             afficher();
@@ -106,16 +142,22 @@ class ChessGame
             while (!echecMateRoiBlanc() && !echecMateRoiNoir()) {
                 bool mouvementImpossible=true ;
                 while (mouvementImpossible){
-                    std:: cout << getNomJoueur1() ;std::cout << " : Deplacement de " ; std ::cin >> positionDepart ; std::cout << " à " ; std ::cin >> positionArivee ; std::cout << "\n" ;
+                    std:: cout << getNomJoueur1() ;
+                    std::cout << " : Deplacement de " ;
+                    std ::cin >> positionDepart ;
+                    std::cout << " à " ; std ::cin >> positionArivee ; std::cout << "\n" ;
                     char h1 = positionDepart[0]; char h2 = positionArivee[0] ;
                     int v1 = (int) (positionDepart[1]-'0') ;int v2 = (int) (positionArivee[1]-'0') ;
                     Position pos1 = Position(h1,v1);
                     Position pos2 = Position(h2,v2);
-                    if (pos1.verifPosition()&& pos2.verifPosition()&&verifDeplacement(getPieceByPosition(pos1),po2)) {
+                    if (pos1.verifPosition()&& pos2.verifPosition()&&verifDeplacement(getPieceByPosition(pos1),pos2)) {
+                            updatePosition(pos1, pos2) ;
+                            mouvementImpossible=false;
 
                     }
 
                 }
+                afficher();
 
             }
 

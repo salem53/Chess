@@ -98,14 +98,27 @@ class ChessGame
 
         };
         void startGame () {
+            std::string positionDepart , positionArivee ;
             afficher();
             std::cout << "Le nom de premier joueur ( Pieces Blanches )  : " ; std:: cin >> joueur1 ; std::cout << "\n" ;
             std::cout << "Le nom de deuxieme joueur ( Pieces noires ) : " ; std:: cin >> joueur2 ; std::cout << "\n" ;
             std:: cout << "---------------Debut de la partie -------------------" ; std::cout << "\n" ;
-            while (!echecMateRoiBlanc && !echecMateRoiNoir) {
+            while (!echecMateRoiBlanc() && !echecMateRoiNoir()) {
+                bool mouvementImpossible=true ;
+                while (mouvementImpossible){
+                    std:: cout << getNomJoueur1() ;std::cout << " : Deplacement de " ; std ::cin >> positionDepart ; std::cout << " à " ; std ::cin >> positionArivee ; std::cout << "\n" ;
+                    char h1 = positionDepart[0]; char h2 = positionArivee[0] ;
+                    int v1 = (int) (positionDepart[1]-'0') ;int v2 = (int) (positionArivee[1]-'0') ;
+                    Position pos1 = Position(h1,v1);
+                    Position pos2 = Position(h2,v2);
+                    if (pos1.verifPosition()&& pos2.verifPosition()&&verifDeplacement(getPieceByPosition(pos1),po2)) {
+
+                    }
+
+                }
 
             }
-            std:: cout << getNomJoueur1() ;std::cout << "\n" ;
+
 
 
 

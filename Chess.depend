@@ -1,0 +1,146 @@
+# depslib dependency file v1.0
+1586726587 source:c:\users\mr.salem\desktop\chess\main.cpp
+	<bits/stdc++.h>
+	"ChessGame.h"
+
+1385320478 
+
+1586636737 source:/home/salem/Chess/main.cpp
+	<bits/stdc++.h>
+	"PionNoir.h"
+	"TourNoir.h"
+	"FouNoir.h"
+	"ChevalNoir.h"
+	"RoiNoir.h"
+	"DameNoir.h"
+	"DameBlanc.h"
+	"RoiBlanc.h"
+	"PionBlanc.h"
+	"FouBlanc.h"
+	"TourBlanc.h"
+	"ChevalBlanc.h"
+
+1586638492 /home/salem/Chess/include/PionNoir.h
+	"Piece.h"
+
+1586633357 /home/salem/Chess/include/Piece.h
+	<string>
+	<Position.h>
+
+1586626024 /home/salem/Chess/include/Position.h
+	<iostream>
+	<math.h>
+
+1586617337 source:/home/salem/Chess/src/TourNoir.cpp
+
+1586633515 /home/salem/Chess/include/TourNoir.h
+	<Piece.h>
+
+1586633534 /home/salem/Chess/include/FouNoir.h
+	"Piece.h"
+
+1586635468 /home/salem/Chess/include/ChevalNoir.h
+
+1586633573 /home/salem/Chess/include/RoiNoir.h
+	"Piece.h"
+
+1586633606 /home/salem/Chess/include/DameNoir.h
+	"TourNoir.h"
+	"FouNoir.h"
+
+1586633034 source:/home/salem/Chess/src/DameBlanc.cpp
+
+1586634988 /home/salem/Chess/include/DameBlanc.h
+	"DameNoir.h"
+
+1586634590 source:/home/salem/Chess/src/RoiBlanc.cpp
+
+1586634985 /home/salem/Chess/include/RoiBlanc.h
+	"RoiNoir.h"
+
+1586634915 source:/home/salem/Chess/src/FouBlanc.cpp
+
+1586635231 source:/home/salem/Chess/src/ChevalBlanc.cpp
+
+1586635548 source:/home/salem/Chess/src/TourBlanc.cpp
+
+1586635865 source:/home/salem/Chess/src/PionBlanc.cpp
+
+1586636425 /home/salem/Chess/include/PionBlanc.h
+	"PionNoir.h"
+
+1586635070 /home/salem/Chess/include/FouBlanc.h
+	"FouNoir.h"
+
+1586636763 /home/salem/Chess/include/TourBlanc.h
+	"TourNoir.h"
+
+1586636787 /home/salem/Chess/include/ChevalBlanc.h
+	"ChevalNoir.h"
+
+1586724461 c:\users\mr.salem\desktop\chess\include\pionnoir.h
+	"Piece.h"
+
+1586724892 c:\users\mr.salem\desktop\chess\include\piece.h
+	<string>
+	<Position.h>
+
+1586723743 c:\users\mr.salem\desktop\chess\include\position.h
+	<bits/stdc++.h>
+	<windows.h>
+
+1586724550 c:\users\mr.salem\desktop\chess\include\tournoir.h
+	<Piece.h>
+
+1586724521 c:\users\mr.salem\desktop\chess\include\founoir.h
+	"Piece.h"
+
+1586724495 c:\users\mr.salem\desktop\chess\include\chevalnoir.h
+
+1586724543 c:\users\mr.salem\desktop\chess\include\roinoir.h
+	"Piece.h"
+
+1586724514 c:\users\mr.salem\desktop\chess\include\damenoir.h
+	"TourNoir.h"
+	"FouNoir.h"
+
+1586706448 c:\users\mr.salem\desktop\chess\include\dameblanc.h
+	"DameNoir.h"
+
+1586695978 c:\users\mr.salem\desktop\chess\include\roiblanc.h
+	"RoiNoir.h"
+
+1586707224 c:\users\mr.salem\desktop\chess\include\pionblanc.h
+	"PionNoir.h"
+
+1586695984 c:\users\mr.salem\desktop\chess\include\foublanc.h
+	"FouNoir.h"
+
+1586707729 c:\users\mr.salem\desktop\chess\include\tourblanc.h
+	"TourNoir.h"
+
+1586695989 c:\users\mr.salem\desktop\chess\include\chevalblanc.h
+	"ChevalNoir.h"
+
+1586638831 source:c:\users\mr.salem\desktop\chess\src\chevalblanc.cpp
+
+1586639465 source:c:\users\mr.salem\desktop\chess\src\pionblanc.cpp
+
+1586639148 source:c:\users\mr.salem\desktop\chess\src\tourblanc.cpp
+
+1586696153 source:c:\users\mr.salem\desktop\chess\src\chessgame.cpp
+
+1589040704 c:\users\mr.salem\desktop\chess\include\chessgame.h
+	"PionNoir.h"
+	"TourNoir.h"
+	"FouNoir.h"
+	"ChevalNoir.h"
+	"RoiNoir.h"
+	"DameNoir.h"
+	"DameBlanc.h"
+	"RoiBlanc.h"
+	"PionBlanc.h"
+	"FouBlanc.h"
+	"TourBlanc.h"
+	"ChevalBlanc.h"
+

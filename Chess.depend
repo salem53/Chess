@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1586726587 source:c:\users\mr.salem\desktop\chess\main.cpp
+1589046704 source:c:\users\mr.salem\desktop\chess\main.cpp
 	<bits/stdc++.h>
 	"ChessGame.h"
 
@@ -130,7 +130,7 @@
 
 1586696153 source:c:\users\mr.salem\desktop\chess\src\chessgame.cpp
 
-1589040704 c:\users\mr.salem\desktop\chess\include\chessgame.h
+1589047022 c:\users\mr.salem\desktop\chess\include\chessgame.h
 	"PionNoir.h"
 	"TourNoir.h"
 	"FouNoir.h"

@@ -97,7 +97,60 @@ class ChessGame
 
 
         };
+        void startGame () {
+            afficher();
+            std::cout << "Le nom de premier joueur ( Pieces Blanches )  : " ; std:: cin >> joueur1 ; std::cout << "\n" ;
+            std::cout << "Le nom de deuxieme joueur ( Pieces noires ) : " ; std:: cin >> joueur2 ; std::cout << "\n" ;
+            std:: cout << "---------------Debut de la partie -------------------" ; std::cout << "\n" ;
+            while (!echecMateRoiBlanc && !echecMateRoiNoir) {
+
+            }
+            std:: cout << getNomJoueur1() ;std::cout << "\n" ;
+
+
+
+
+
+
+        }
+        std::string getNomJoueur1() {
+            return joueur1;
+        }
+        std::string getNomJoueur2() {
+            return joueur2;
+        }
+
+        void setNomJoueur1 (std::string nom ){
+            joueur1=nom ;
+
+        }
+        void setNomJoueur2 (std::string nom ){
+            joueur2=nom ;
+
+        }
         bool echecMateRoiNoir() {
+            Position p = getPositionRoiNoir() ;
+            bool mate=false ;
+            if (echecRoiNoir()){
+                if (!verifDeplacement(getPieceByPosition(p),Position(p.getH()+1,p.getV())) && !verifDeplacement(getPieceByPosition(p),Position(p.getH()-1,p.getV())) && !verifDeplacement(getPieceByPosition(p),Position(p.getH(),p.getV()+1)) && !verifDeplacement(getPieceByPosition(p),Position(p.getH(),p.getV()-1)) && !verifDeplacement(getPieceByPosition(p),Position(p.getH()+1,p.getV()+1)) && !verifDeplacement(getPieceByPosition(p),Position(p.getH()-1,p.getV()+1)) && !verifDeplacement(getPieceByPosition(p),Position(p.getH()+1,p.getV()-1)) && !verifDeplacement(getPieceByPosition(p),Position(p.getH()-1,p.getV()-1)) )  {
+                        mate = true ;
+                }
+            }
+            return mate ;
+
+
+
+        }
+        bool echecMateRoiBlanc() {
+            Position p = getPositionRoiBlanc() ;
+            bool mate=false ;
+            if (echecRoiBlanc()){
+                if (!verifDeplacement(getPieceByPosition(p),Position(p.getH()+1,p.getV())) && !verifDeplacement(getPieceByPosition(p),Position(p.getH()-1,p.getV())) && !verifDeplacement(getPieceByPosition(p),Position(p.getH(),p.getV()+1)) && !verifDeplacement(getPieceByPosition(p),Position(p.getH(),p.getV()-1)) && !verifDeplacement(getPieceByPosition(p),Position(p.getH()+1,p.getV()+1)) && !verifDeplacement(getPieceByPosition(p),Position(p.getH()-1,p.getV()+1)) && !verifDeplacement(getPieceByPosition(p),Position(p.getH()+1,p.getV()-1)) && !verifDeplacement(getPieceByPosition(p),Position(p.getH()-1,p.getV()-1)) )  {
+                        mate = true ;
+                }
+            }
+            return mate ;
+
 
 
         }

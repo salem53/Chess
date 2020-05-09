@@ -97,6 +97,10 @@ class ChessGame
 
 
         };
+        bool echecMateRoiNoir() {
+
+
+        }
         bool echecRoiNoir(){
            bool echec=false;
             for(int i=0;i<piecesBlanc.size()&&!echec;i++){
